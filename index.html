@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 3fr 1fr;
+            grid-template-rows:1fr 3fr 1fr ;
+        }
+
+    .header{
+        background-color: red;
+        font-size: 80px;
+        text-align: center;
+        border:1px solid black;
+        grid-column: span 3;
+
+    }
+    .nav{
+        background-color: green;
+        font-size: 30px;
+        text-align: center;
+        border:1px solid black;
+
+    }
+    .menu{
+        background-color: lightcoral;
+        font-size: 60px;
+        text-align: center;
+        border:1px solid black;
+        grid-column: span 2;
+
+    }
+   
+    .Footer{
+        background-color: blue;
+        font-size: 60px;
+        text-align: center;
+        border:1px solid black;
+        grid-column: span 3;
+
+    }
+    @media only screen and (max-width:600px) {
+        .grid-container{
+            display:grid;
+        grid-template-columns:1fr 3fr ;
+        grid-template-rows:1fr 3fr  1fr ;
+        }
+
+    .header{
+        grid-column: span 2;
+    }
+    .menu{
+        grid-column:span 1;
+    }
+    .Footer{
+        grid-column: span 2;
+    }
+}
+@media only screen and (max-width:300px) {
+        .grid-container{
+        grid-template-columns: 3fr ;
+        grid-template-rows:1fr 3fr 3fr 1fr ;
+        }
+    
+    .header{
+        grid-column: span 1;
+    }
+
+    .Footer{
+        grid-column: span 1;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="header">Main page</div>
+        <div class="nav">
+            <td><a href="Favorite_songs.html">Favorite songs</a></td><br>
+            <td><a href="Favorite_games.html">Favorite Games</a></td><br>
+            <td><a href="Favorite_movies.html">Favorite movies</a></td><br>
+            <td><a href="Hobbies.html">Hobbies</a></td><br>
+            <td><a href="Favorite_foods.html">Favorite foods</a></td><br>
+        </div>
+        <div class="menu">1.)Welcome to my major pt! Im Rynelzhen Dylan Labides but you can call me Zhen. I am a Volleyball varsity
+		and I transferred to Don Bosco to play Volleyball. I am 14 years old and I am in grade 9.
+		</div>
+    
+        <div class="Footer">Copyright 2023 Monotbay industries</div>
+        
+    </div>
+</body>
+</html>
